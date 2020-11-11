@@ -14,14 +14,15 @@
 /*HEADER*/
 
 header {
-    height: 88px;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
+
 #n134 {
-    padding: 1.1em 2.5em .9em 1em;
-    height: 75px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
 }
 
 header nav {
@@ -31,22 +32,28 @@ header nav {
 header nav ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav li {
     margin: 0;
-    display: inline;
+    width: 50%;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 header nav a {
     box-sizing: border-box;
     display: inline-block;
-    padding: 1.5em 1.5em;
+    padding: 1.5em 0 1.5em 0;
     color: #37474f;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     line-height: 2.5;
     margin: 0;
+    width: 100%;
 }
 header nav a:hover {
     background: #37474f;
@@ -179,6 +186,27 @@ header nav a:hover {
 
     .bg-white{
         background-color: #E0E0E0;
+    }
+
+    /*HEADER*/
+
+    header {
+        height: 88px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #n134 {
+        padding: 1.1em 2.5em .9em 1em;
+        height: 75px;
+        width: auto;
+        margin: 0;
+    }
+    header nav {
+        height: 100%;
+    }
+    header nav a{
+        padding: 1.5em 1.5em;
     }
 
     /*REGION TOP*/
