@@ -1,0 +1,175 @@
+
+/* ICONES */
+/* Les icones sont stockés dans une font flaticon */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.flaticon-magnifying-glass:before { content: "\f100"; }
+.flaticon-menu:after { content: "\f101"; }
+.flaticon-cloudy:before { content: "\f102"; }
+.flaticon-twitter:before { content: "\f103"; }
+.flaticon-facebook:before { content: "\f104"; }
+.flaticon-instagram:before { content: "\f105"; }
+.flaticon-pinterest:before { content: "\f106"; }
+.flaticon-youtube:before { content: "\f107"; }
+.flaticon-linkedin:before { content: "\f108"; }
+
+
+/* CLASSES REUTILISABLES */
+
+.white-txt{
+  color: white;
+}
+
+/*  HEADER  */
+
+header{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 80px;
+  margin: 0;
+}
+nav{
+  width: 90%;
+  line-height: 80px;
+  max-height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  width: 85px;
+}
+h1{
+  margin-left: 35px;
+}
+.meteo{
+  display: none !important;
+}
+.menu-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+}
+.menu-icons li{
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+.menu-icons a{
+  text-decoration: none;
+  color: white;
+  text-align: right;
+}
+
+/*  CORP DE LA PAGE */
+
+body{
+  height: 100vh;
+  background-image: url("../img/lauzanne_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rubriques{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.rubriques a{
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 2px;
+  font-size: 25px;
+  width: 400px;
+  color: white;
+}
+.reseaux{
+  display: none;
+}
+/*  Tablette  */
+@media screen and(min-width: 768px) {
+
+}
+/*  Desktop   */
+@media screen and (min-width: 992px) {
+
+  h1{
+    margin-left: 80px;
+  }
+  .meteo{
+    display: inline-block !important;
+  }
+  .menu-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-icons a{
+    text-decoration: none;
+    text-align: left;
+    max-height: 80px;
+    width: 75px;
+    color: white;
+  }
+  .menu-icons a:hover{
+    color: black;
+  }
+  .rubriques{
+    flex-direction: row;
+  }
+  .reseaux{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .reseaux a{
+    padding: 20px;
+    background-color: #007bff;
+  }
+  .reseaux a:hover{
+    background-color: #0056b3;
+    text-decoration: none;
+    width: 150px;
+  }
+  .reseaux a:hover:after{
+    color: white;
+    margin-left: 32px;
+  }
+  .reseaux a:nth-child(1):hover:after{
+    content: 'Facebook';
+  }
+  .reseaux a:nth-child(2):hover:after{
+    content: 'Twitter';
+  }
+  .reseaux a:nth-child(3):hover:after{
+    content: 'Instagram';
+  }
+  .reseaux a:nth-child(4):hover:after{
+    content: 'Pinterest';
+  }
+  .reseaux a:nth-child(5):hover:after{
+    content: 'Youtube';
+  }
+  .reseaux a:nth-child(6):hover:after{
+    content: 'LinkedIn';
+  }
+}
