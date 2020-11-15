@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57330e0a-b741-4b6f-b941-494732da5c8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquette/1200px-Twitter_Verified_Badge.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquette/facebook-f-logo-transparent-facebook-f-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquette/lausanne_desktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquette/lausanne_mobile.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
       <workItem from="1605124415104" duration="633000" />
       <workItem from="1605271050727" duration="3021000" />
       <workItem from="1605396459170" duration="1330000" />
-      <workItem from="1605442509322" duration="14597000" />
+      <workItem from="1605442509322" duration="14948000" />
     </task>
     <servers />
   </component>
