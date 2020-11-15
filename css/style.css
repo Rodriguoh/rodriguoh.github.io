@@ -79,7 +79,7 @@ a:hover{
 }
 .menu-icons{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
@@ -164,6 +164,7 @@ body{
   }
   .menu-icons > .meteo-icons{
     display: block !important; /* Sans !important, la valeur de display n'est pas mise à jour */
+    vertical-align: bottom;
   }
 
   /*  CORPS DE LA PAGE  */
