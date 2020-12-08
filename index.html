@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Pilotage de volet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style>
 
@@ -25,7 +26,14 @@
             outline: none;
         }
 
-        input[type=range]::-webkit-slider-thumb,
+        input[type=range]::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+        }
+
         input[type=range]::-moz-range-thumb{
             -webkit-appearance: none;
             background-color: black;
