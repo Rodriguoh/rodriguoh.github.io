@@ -12,11 +12,26 @@
         }
 
         input[type=range] {
+            -webkit-appearance: none;
             transform: rotate(270deg);
             width: 340px;
             position: absolute;
             top: 180px;
             left: 600px;
+            background: transparent;
+        }
+
+        input[type=range]:focus{
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb,
+        input[type=range]::-moz-range-thumb{
+            -webkit-appearance: none;
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
         }
 
         #vollets{
@@ -24,13 +39,14 @@
             width: 360px;
             background: url("bg_volet.png") no-repeat;
             transform: rotate(270deg);
-            display: inline-block;
         }
+
         #overlay{
             height: 100%;
             width: 100%;
             background-color: white;
         }
+
     </style>
     <body>
 
