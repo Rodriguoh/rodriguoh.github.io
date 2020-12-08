@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="Description" content="Bienvenue sur le site de la ville de Lausanne">
-    <title>Ville de Lausanne</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div class="menu">
-        <nav>
-            <a href="">
-                <img src="img/lauzanne_logo.png" id="logo" alt="logo de la ville de lausanne">
-            </a>
-            <h1 class="white-txt" id="titre">LAUSANNE</h1>
-            <ul class="menu-icons white-txt">
-                <li>
-                    <a href=""><i class="flaticon-magnifying-glass"></i></a>
-                </li>
-                <li class="meteo-icons">
-                    <a href="">
-                        <i class="flaticon-cloudy"></i>
-                    </a>
-                </li>
-                <li class="meteo-icons">|</li>
-                <li class="meteo-icons">4°C</li>
-                <li>
-                    <a href=""><i class="flaticon-menu"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="reseaux">
-        <a href=""><i class="flaticon-facebook white-txt"></i></a>
-        <a href=""><i class="flaticon-twitter white-txt"></i></a>
-        <a href=""><i class="flaticon-instagram white-txt"></i></a>
-        <a href=""><i class="flaticon-pinterest white-txt"></i></a>
-        <a href=""><i class="flaticon-youtube white-txt"></i></a>
-        <a href=""><i class="flaticon-linkedin white-txt"></i></a>
-    </div>
-    <div class="rubriques">
-        <a href="">See and Do</a>
-        <a href="">Eating and Nightlife</a>
-        <a href="">Useful</a>
-    </div>
-</body>
+<html>
+    <head>
+        <title>Pilotage de volet</title>
+    </head>
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type=range] {
+            transform: rotate(270deg);
+            width: 340px;
+            position: absolute;
+            top: 180px;
+            left: 600px;
+        }
+
+        #vollets{
+            height: 340px;
+            width: 360px;
+            background: url("bg_volet.png") no-repeat;
+            transform: rotate(270deg);
+            display: inline-block;
+        }
+        #overlay{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+    </style>
+    <body>
+
+        <input type="range" id="range" min="0" max="10" value="10" oninput="cover()">
+
+        <div id="vollets">
+            <div id="overlay"></div>
+        </div>
+
+    </body>
+    <script>
+
+        function cover(){
+
+            let range = document.querySelector('#range');
+            let vollets = document.querySelector('#vollets');
+            let overlay = document.querySelector('#overlay');
+
+            overlay.style.width = range.value*10+'%';
+
+            if(range.value == 0){
+                vollets.style.backgroundPosition = "bottom";
+            }else{
+                vollets.style.backgroundPosition = "";
+            }
+        }
+    </script>
 </html>
